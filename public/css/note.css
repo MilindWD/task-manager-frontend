@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+html {
+    font-size: 62%;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #141414;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calender {
+    width: 45rem;
+    height: 52rem;
+    background: #1b1c1e;
+    box-shadow: 0 .7rem 2rem rgba(0,0, 0, 0.6);
+}
+
+.month {
+    width: 100%;
+    height: 12rem;
+    background: teal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    text-align: center;
+    text-shadow: 0 .2rem .2rem rgba(0,0, 0, 0.6);
+}
+.month .p {
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.month .n {
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    opacity: 0;
+}
+
+.month h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    margin-bottom: 1rem;
+}
+.month p {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+.month .p:active{transform: translateY(2px);}
+
+.add {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add .add_description {
+    width: 80%;
+    height: 50%;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.add .add_btn {
+    background: none;
+    color: turquoise;
+    border: none;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    width: 7%;
+    height: 50%;
+    position: relative;
+    left: 2%;
+    
+}
+.add .add_description:focus{ outline: none;
+    border: 1px solid #28B9B5;}
+.add .add_btn:focus{outline: none;}
+.add .add_btn:active{transform: translateY(2px);}
+
+.line {
+    width: 100%;
+    height: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #646464;
+    font-weight: 200;
+    text-align: center;
+}
+
+.lists {
+    width: 100%;
+    height: 34rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    overflow: scroll;
+}
+
+.lists .items {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lists .item_description {
+    width: 90%;
+    height: 3.5rem;
+    background: #2c2c2c;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 400;
+    letter-spacing: .1rem;  
+    overflow: hidden;
+}
+
+.lists .item_delete {
+    background: none;
+    color: tomato;
+    border: none;
+    width: 4%;
+    height: 70%;
+    position: relative;
+    left: 1%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lists .deleteHover {
+    background: none;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    position: relative;
+    width: 1%;
+    height: 10%;
+    top: -55%;
+    right: 12%;
+    display: none;
+    color: tomato;
+}
+
+.lists .item_delete:hover + .deleteHover {
+    display: block;
+}
+.lists .item_delete:focus{outline: none;}
+.lists .item_delete:active{transform: translateY(2px);}
+
+
+::-webkit-scrollbar {
+    outline: none;
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #1b1c1e;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: teal;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: cyan;
+    
+}
+
+.complete {
+    text-decoration: line-through;
+    opacity: .4;
+}
+
