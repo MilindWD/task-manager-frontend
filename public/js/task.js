@@ -22,7 +22,7 @@ document.addEventListener("keypress",function(event) {
 
 //function
 function back() {
-    location.replace("http://localhost:3000/task");
+    location.replace("https://calendar-task-frontend.herokuapp.com/task");
 }
 
  function addTodo(event) {

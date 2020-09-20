@@ -72,7 +72,7 @@ const renderCalendar = () => {
 
 var reply_click = function (clicked_id){
     document.querySelector(".days").addEventListener('click',() => {
-        location.replace("http://localhost:3000/task?q="+ document.querySelector(".date h1").innerHTML +" "+clicked_id+" "+ date.getFullYear() );
+        location.replace("https://calendar-task-frontend.herokuapp.com/task?q="+ document.querySelector(".date h1").innerHTML +" "+clicked_id+" "+ date.getFullYear() );
     });
 }
 
